@@ -17,13 +17,15 @@
 # reversing the number using index and storing it to new variable(reversed)
 # if-else start if number equals reversed, True, if not, False
 
-# # # CODE # # #
-number1 = "123454321"
-lenght = len(number1)
+def palindrome(number):
+    print(f"Original number {number}")
+    number = str(number)
+    lenght = len(number)
+    reversed_number = number[-1:-(lenght+1):-1]
+    if number == reversed_number:
+        print('Yes. given number is palindrome number')
+    else:
+        print("No. given number is not palindrome number")
 
-print(f"Original number {number1}")
-reversed_number = number1[-1:-(lenght+1):-1]
-if number1 == reversed_number:
-    print(True)
-else:
-    print(False)
+palindrome(121)
+palindrome(123)
