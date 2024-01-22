@@ -10,3 +10,14 @@
 
 # original number 125
 # No. given number is not palindrome number
+
+#CODE
+number1 = "123454321"
+lenght = len(number1)
+
+print(f"Original number {number1}")
+reversed_number = number1[-1:-(lenght+1):-1]
+if number1 == reversed_number:
+    print(True)
+else:
+    print(False)
