@@ -11,7 +11,13 @@
 # original number 125
 # No. given number is not palindrome number
 
-#CODE
+# Pseudocode
+# assigning variable for the number
+# transforming the variable to str
+# reversing the number using index and storing it to new variable(reversed)
+# if-else start if number equals reversed, True, if not, False
+
+# # # CODE # # #
 number1 = "123454321"
 lenght = len(number1)
 
