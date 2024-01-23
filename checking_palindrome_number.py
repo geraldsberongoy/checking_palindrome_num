@@ -20,12 +20,13 @@
 def palindrome(number):
     print(f"Original number {number}")
     number = str(number)
-    lenght = len(number)
-    reversed_number = number[-1:-(lenght+1):-1]
+    reversed_number = number[::-1]
     if number == reversed_number:
-        print('Yes. given number is palindrome number')
+        print('Yes. Given number is palindrome number.\n')
     else:
-        print("No. given number is not palindrome number")
+        print("No. Given number is not palindrome number\n")
 
+number=input("Input number: ")
 palindrome(121)
 palindrome(123)
+palindrome(number)
